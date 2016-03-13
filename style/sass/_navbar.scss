@@ -1,0 +1,20 @@
+.navbar {
+  text-align: center;
+  height: $navbar-height;
+  vertical-align: middle;
+  background-color: $transparent-red;
+
+h1 {
+  font-family: roboto-thin;
+  font-weight: 300;
+  color: #fff;
+  margin: 0px;
+  line-height: $navbar-height;
+  text-align: center;
+  font-size: 70px;
+  b {
+    font-family: roboto-bold;
+  }
+}
+
+}
