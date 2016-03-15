@@ -134,6 +134,11 @@ button:focus {
   box-shadow: none;
   border-color: rgba(255, 0, 0, 0.7); }
 
+.form-control:hover {
+  outline: none;
+  box-shadow: none;
+  border-color: rgba(255, 0, 0, 0.7); }
+
 .hidden-input {
   background-color: transparent;
   border: none;
@@ -159,44 +164,63 @@ button:focus {
   background-color: rgba(0, 255, 0, 0.7);
   border-radius: 1px;
   color: black; }
-.training .uib-datepicker {
-  font-size: 20px; }
-  .training .uib-datepicker .ng-binding {
-    font-size: 40px; }
+.training .current {
+  border: solid 1px red; }
+.training .uib-datepicker .ng-binding {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  font-family: roboto-thin;
+  font-weight: 300; }
+.training .btn-group-sm > .btn, .training .training .btn-sm {
+  padding: 5px 30px; }
 .training .btn-default {
   border: solid rgba(0, 0, 0, 0.7) 1px;
   background-color: transparent; }
 .training .btn:hover {
-  background-color: rgba(200, 200, 200, 0.5); }
+  background-color: rgba(0, 0, 0, 0.7);
+  transition-duration: 0.5s;
+  opacity: 0.5; }
 .training .well {
+  padding: 0;
   outline: none;
   box-shadow: none;
   border: none;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff; }
 .training .exercise-name-group {
   float: right; }
 .training h4 {
   margin-top: 25px;
   margin-bottom: 25px;
   color: #fff; }
+.training h3 {
+  color: black; }
+.training h2 {
+  line-height: 70px; }
 .training .btn-group-sm > .btn, .training .btn-sm {
-  padding: 15px; }
+  padding: 5px 30px; }
+.training .bottom-gap {
+  margin-bottom: 50px; }
 .training thead .uib-title {
   border: 0px;
-  height: 92px;
-  background-color: rgba(255, 0, 0, 0.7); }
+  height: 70px;
+  background-color: rgba(255, 0, 0, 0.6); }
 .training thead .uib-right {
-  background-color: rgba(255, 0, 0, 0.7);
-  height: 92px;
+  background-color: rgba(255, 0, 0, 0.6);
+  height: 70px;
   border: 0px; }
 .training thead .uib-left {
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.6);
   border: 0px;
-  height: 92px; }
+  height: 70px; }
 .training thead .btn:hover {
   background-color: black;
   color: #fff;
-  opacity: 0.6; }
+  opacity: 0.5;
+  transition-duration: 0.5s; }
 .training .exercise-list {
   padding-top: 25px; }
 .training .training-date {

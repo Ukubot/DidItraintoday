@@ -11,13 +11,25 @@
     color: black;
   }
 
+  .current {
+    border:solid 1px red;
+  }
 
   .uib-datepicker {
-    font-size: 20px;
     .ng-binding {
-      font-size: 40px;
+      outline: none;
+      box-shadow: none;
+      border:none;
+      font-size: 30px;
+        color: #fff;
+        font-family: roboto-thin;
+        font-weight: 300;
     }
   }
+
+.btn-group-sm>.btn, .training .btn-sm {
+  padding: 5px 30px;
+}
 
   .btn-default {
     border: solid $transparent-black 1px;
@@ -25,14 +37,18 @@
   }
 
   .btn:hover {
-    background-color: $transparent-gray;
+    background-color: $transparent-black;
+    transition-duration: 0.5s;
+    opacity:0.5;
   }
 
   .well {
+    padding: 0;
     outline: none;
     box-shadow: none;
     border: none;
-    background-color: $transparent-white-light;
+    background-color: $transparent-black-light;
+    color: #fff;
   }
 
   .exercise-name-group {
@@ -46,31 +62,44 @@
     color: #fff;
   }
 
-  .btn-group-sm>.btn, .btn-sm {
-    padding:15px;
+  h3 {
+    color: black;
   }
+
+  h2 {
+line-height: 70px;
+  }
+
+  .btn-group-sm>.btn, .btn-sm {
+    padding:5px 30px;
+  }
+
+.bottom-gap {
+margin-bottom: 50px;
+}
 
   thead {
     .uib-title {
       border: 0px;
       height: $well-header-height;
-      background-color: $transparent-red;
+      background-color: $transparent-red-light;
     }
 
     .uib-right {
-      background-color: $transparent-red;
+      background-color: $transparent-red-light;
       height: $well-header-height;
       border: 0px;
     }
     .uib-left {
-      background-color: $transparent-red;
+      background-color: $transparent-red-light;
       border: 0px;
       height: $well-header-height;
     }
     .btn:hover {
       background-color: black;
       color: #fff;
-      opacity:0.6;
+      opacity:0.5;
+      transition-duration: 0.5s;
     }
   }
 

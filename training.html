@@ -16,19 +16,20 @@
       <div class="mainpanelwrap">
         <div class="mainpanel">
           <div class="training">
-            <h2><b>What</b> Did<b> You</b> train </h2>
+            <h3><b>What</b> Did<b> You</b> train </h3>
             <div ng-controller="DatepickerDemoCtrl">
                 <div class="col-md-7 col-md-offset-5">
-                  <h2><input type="text" class="form-control training-date" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true"/></h2>
+                  <h2><input type="text" class="form-control training-date"
+                    uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true"/></h2>
                 </div>
-              <div class="row">
+              <div class="row bottom-gap">
                 <div class="col-md-7">
                   <div style="display:inline-block; min-height:290px;">
                     <uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="inlineOptions"></uib-datepicker>
                   </div>
                 </div>
                 <div class="col-md-5">
-                  <h2>Creat <b>Your Own</b> List</h2>
+                  <h2>Choose <b> Your</b> Activities:</h2>
                   <div class="exercise-list">
                     <div class="row">
                       <div class="col-md-10 form-group exercise-name-group">
@@ -38,13 +39,13 @@
 
                     <div class="row">
                       <div class="col-md-10 form-group exercise-name-group">
-                        <input type="text" value="Chest day"placeholder="Chest day" id="exercise2" class="form-control exercise-name">
+                        <input type="text" placeholder="Chest day" id="exercise2" class="form-control exercise-name">
                       </div>
                     </div>
 
                     <div class="row">
                       <div class="col-md-10 form-group exercise-name-group">
-                        <input type="text" value="Running" placeholder="Running" id="exercise3" class="form-control exercise-name">
+                        <input type="text" placeholder="Running" id="exercise3" class="form-control exercise-name">
                       </div>
                     </div>
 
@@ -61,10 +62,7 @@
                   <h4><b>Exercises </b></h4>
                 </div>
                 <div class="col-md-8 form-group exercise-name-group">
-                  <input type="text" value="Stretching" placeholder="Example exercise.." id="set1" class="form-control exercise-name">
-                </div>
-                <div class="col-md-8 form-group exercise-name-group">
-                  <input type="text" value="Stretching" placeholder="Example exercise.." id="set2" class="form-control exercise-name">
+                  <input type="text" placeholder="Add an exercise for this day" id="set1" class="form-control exercise-name">
                 </div>
               </div>
             </div>
