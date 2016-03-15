@@ -1,0 +1,37 @@
+.btn {
+  border-radius: 0px;
+  padding: 0px;
+  color: black;
+}
+
+.footerbtn {
+  padding: 10px;
+}
+
+.footerbtn:hover {
+  cursor: pointer;
+  h5 {
+      color: black;
+  }
+}
+
+.DidI {
+  background-color: $transparent-red;
+  width: 100%;
+  height: $btn-height;
+  border: none;
+  border-radius: 0px;
+}
+
+.DidI:hover {
+  transition-duration: 0.1s;
+  border-bottom: solid 5px black;
+  h3 {
+    color: black;
+  }
+}
+
+
+button:focus {
+  outline: 0;
+}

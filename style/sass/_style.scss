@@ -1,8 +1,71 @@
+body {
+  position: fixed;
+  background-image: url('../../media/images/background1.jpg');
+}
+
 .main-background {
   color: black;
   height: 100vh;
-  background-image: url('../../media/images/background1.jpg');
+  width: 100vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-y: auto;
+}
+
+b {
+  font-family: roboto-bold;
+}
+
+h1 {
+  font-family: roboto-thin;
+  font-weight: 300;
+  color: #fff;
+  margin: 0px;
+  line-height: $navbar-height;
+  text-align: center;
+  font-size: 70px;
+}
+
+h2 {
+  font-family: roboto-thin;
+  font-weight: 300;
+  color: #000;
+  margin: 0px;
+  line-height: $navbar-height;
+  text-align: center;
+  font-size: 70px;
+}
+
+h3 {
+  font-family: roboto-thin;
+  font-weight: 300;
+  color: #fff;
+  margin: 0px;
+  line-height: $btn-height;
+  text-align: center;
+  font-size: 70px;
+}
+
+h4 {
+  background-color: $transparent-red-light;
+  font-family: roboto-thin;
+  font-weight: 600;
+  color: black;
+  padding: 0px 30px 0px 30px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 40px;
+}
+
+h5 {
+  font-family: roboto-thin;
+  font-weight: 600;
+  color: #fff;
+  line-height: $footer-height;
+  font-size: $footer-height;
+  text-align: center;
+  .small {
+    font-size:300px;
+  }
 }

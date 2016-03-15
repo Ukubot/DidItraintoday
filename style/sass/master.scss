@@ -1,6 +1,11 @@
 @import "_variables";
 @import "_style";
 @import "_navbar";
+@import "_mainpanel";
+@import "_buttons";
+@import "_forms";
+@import "_footer";
+
 
 @font-face {
     font-family: roboto-thin;
@@ -10,4 +15,9 @@
 @font-face {
 font-family: roboto-bold;
 src: url('../../media/fonts/roboto/roboto-bold.ttf');
+}
+
+@font-face {
+font-family: roboto-medium;
+src: url('../../media/fonts/roboto/roboto-Medium.ttf');
 }

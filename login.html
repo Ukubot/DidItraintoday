@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Did I train today</title>
+  <link rel="stylesheet" href="compiled/css/bootstrap.min.css">
+  <link rel="stylesheet" href="compiled/css/style.min.css">
+</head>
+<body>
+  <div class="main-background">
+    <nav class="navbar">
+      <h1>DID <b>I</b> TRAIN <b>TODAY</b>?</h1>
+    </nav>
+    <div class="container">
+      <div class="mainpanelwrap">
+        <div class="mainpanel">
+          <div class="row">
+            <h2><b>Sweet!</b></h2>
+            <h2>Now <b>Log In</b> and enjoy</h2>
+          </div>
+          <div class="optionbuttons">
+            <div class="row">
+              <div class="col-md-4 col-md-offset-2">
+                <div ng-controller="TooltipDemoCtrl">
+                  <div class="form-group">
+                    <label for="username"><h4>Username</h4></label>
+                    <input type="text" id="username" ng-model="dynamicTooltipText" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div ng-controller="TooltipDemoCtrl">
+                  <div class="form-group">
+                    <label for="password"><h4>Password</h4></label>
+                    <input type="password" id="password" ng-model="dynamicTooltipText" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 loginfooter">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-4 col-md-offset-3 footerbtn">
+                <a href="/register.html" class="btn"><h5>Register</h5></a>
+              </div>
+              <div class="col-md-5 footerbtn">
+                <a href="#3" class="btn"><h5><b>Log In</b></h5></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="compiled/js/main.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+</html>
