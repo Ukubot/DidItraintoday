@@ -5,7 +5,7 @@
 @import "_buttons";
 @import "_forms";
 @import "_footer";
-
+@import "_trainingdate";
 
 @font-face {
     font-family: roboto-thin;
@@ -20,4 +20,11 @@ src: url('../../media/fonts/roboto/roboto-bold.ttf');
 @font-face {
 font-family: roboto-medium;
 src: url('../../media/fonts/roboto/roboto-Medium.ttf');
+}
+
+@font-face {
+font-family: 'Glyphicons Halflings';
+src: url('media/fonts/bootstrap/glyphicons-halflings-regular.ttf');
+src: url('media/fonts/bootstrap/glyphicons-halflings-regular.woff2');
+src: url('media/fonts/bootstrap/glyphicons-halflings-regular.woff');
 }

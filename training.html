@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="ui.bootstrap.demo">
+<head>
+  <meta charset="utf-8">
+  <title>Did I train today</title>
+  <!-- <link rel="stylesheet" href="compiled/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="compiled/css/style.min.css">
+</head>
+<body>
+  <div class="main-background">
+    <nav class="navbar">
+      <h1>DID <b>I</b> TRAIN <b>TODAY</b>?</h1>
+    </nav>
+    <div class="container">
+      <div class="mainpanelwrap">
+        <div class="mainpanel">
+          <div class="training">
+            <h2><b>What</b> Did<b> You</b> train </h2>
+            <div ng-controller="DatepickerDemoCtrl">
+                <div class="col-md-7 col-md-offset-5">
+                  <h2><input type="text" class="form-control training-date" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true"/></h2>
+                </div>
+              <div class="row">
+                <div class="col-md-7">
+                  <div style="display:inline-block; min-height:290px;">
+                    <uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="inlineOptions"></uib-datepicker>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <h2>Creat <b>Your Own</b> List</h2>
+                  <div class="exercise-list">
+                    <div class="row">
+                      <div class="col-md-10 form-group exercise-name-group">
+                        <input type="text" value="Stretching" placeholder="Example exercise.." id="exercise1" class="form-control exercise-name">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-10 form-group exercise-name-group">
+                        <input type="text" value="Chest day"placeholder="Chest day" id="exercise2" class="form-control exercise-name">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-10 form-group exercise-name-group">
+                        <input type="text" value="Running" placeholder="Running" id="exercise3" class="form-control exercise-name">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-10 form-group exercise-name-group">
+                        <input type="text" placeholder="Add new.. " id="exercise4" class="form-control exercise-name">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-7">
+                  <h4><b>Exercises </b></h4>
+                </div>
+                <div class="col-md-8 form-group exercise-name-group">
+                  <input type="text" value="Stretching" placeholder="Example exercise.." id="set1" class="form-control exercise-name">
+                </div>
+                <div class="col-md-8 form-group exercise-name-group">
+                  <input type="text" value="Stretching" placeholder="Example exercise.." id="set2" class="form-control exercise-name">
+                </div>
+              </div>
+            </div>
+          </div><!--training div end-->
+        </div><!--mainpanel end-->
+        <div class="row">
+          <div class="col-md-12 loginfooter">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-4 col-md-offset-3 footerbtn">
+                <a href="/login.html" class="btn"><h5>Back</h5></a>
+              </div>
+              <div class="col-md-5 footerbtn">
+                <a href="#3" class="btn"><h5><b>Done</b></h5></a>
+              </div>
+            </div>
+          </div>
+        </div><!--loginfooter row end-->
+      </div><!--mainpanel-wrapper end-->
+    </div><!--container-end-->
+  </body>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="compiled/js/main.min.js"></script>
+  <script src="compiled/js/datepicker.js"></script>
+
+  </html>

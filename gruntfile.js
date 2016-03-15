@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       options:{livereload:true},
       sass: {
         files: ['style/sass/*.scss'],
-        tasks: ['sass','cssmin'],
+        tasks: ['sass','cssmin','uglify'],
       }
     },
 
@@ -24,12 +24,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'compiled/js/main.min.js': ['js/input2.js'],
-          'compiled/js/base.min.js': [
-          'bower_components/bootstrap/dist/js/bootstrap.min.js',
-          'bower_components/angular/angular.min.js',
-          'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
-        ]
+          'compiled/js/main.min.js': ['js/jsinput.js']
         }
       }
     },
@@ -42,7 +37,6 @@ module.exports = function(grunt) {
           src: ['*.css', '!*min.css'],
           dest: 'compiled/css/',
           ext: '.min.css'
-
         }]
       }
     },

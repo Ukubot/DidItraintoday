@@ -1,0 +1,84 @@
+.training {
+  .full button span {
+    background-color: $exercise1-color;
+    border-radius: 1px;
+    color: black;
+  }
+
+  .partially button span {
+    background-color: $exercise2-color;
+    border-radius: 1px;
+    color: black;
+  }
+
+
+  .uib-datepicker {
+    font-size: 20px;
+    .ng-binding {
+      font-size: 40px;
+    }
+  }
+
+  .btn-default {
+    border: solid $transparent-black 1px;
+    background-color: transparent;
+  }
+
+  .btn:hover {
+    background-color: $transparent-gray;
+  }
+
+  .well {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: $transparent-white-light;
+  }
+
+  .exercise-name-group {
+    float:right;
+  }
+
+
+  h4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+  }
+
+  .btn-group-sm>.btn, .btn-sm {
+    padding:15px;
+  }
+
+  thead {
+    .uib-title {
+      border: 0px;
+      height: $well-header-height;
+      background-color: $transparent-red;
+    }
+
+    .uib-right {
+      background-color: $transparent-red;
+      height: $well-header-height;
+      border: 0px;
+    }
+    .uib-left {
+      background-color: $transparent-red;
+      border: 0px;
+      height: $well-header-height;
+    }
+    .btn:hover {
+      background-color: black;
+      color: #fff;
+      opacity:0.6;
+    }
+  }
+
+  .exercise-list {
+    padding-top: 25px;
+  }
+
+  .training-date {
+  margin-bottom: 100px;
+  }
+}

@@ -74,8 +74,13 @@ h5 {
   width: 100%;
   margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 8px 8px 1px rgba(255, 0, 0, 0.7);
   padding-bottom: 40px; }
+
+.mainpanelwrap {
+  box-shadow: 8px 8px 1px rgba(255, 0, 0, 0.7); }
+  .mainpanelwrap .row {
+    margin-right: 0px;
+    margin-left: 0px; }
 
 .container {
   padding-bottom: 50px; }
@@ -129,11 +134,73 @@ button:focus {
   box-shadow: none;
   border-color: rgba(255, 0, 0, 0.7); }
 
+.hidden-input {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none; }
+
+.exercise-name {
+  height: 50px;
+  line-height: 30px;
+  font-size: 30px; }
+
 .loginfooter {
   text-align: center;
   left: 0;
   position: relative;
   background-color: rgba(255, 0, 0, 0.7); }
+
+.training .full button span {
+  background-color: rgba(0, 0, 255, 0.7);
+  border-radius: 1px;
+  color: black; }
+.training .partially button span {
+  background-color: rgba(0, 255, 0, 0.7);
+  border-radius: 1px;
+  color: black; }
+.training .uib-datepicker {
+  font-size: 20px; }
+  .training .uib-datepicker .ng-binding {
+    font-size: 40px; }
+.training .btn-default {
+  border: solid rgba(0, 0, 0, 0.7) 1px;
+  background-color: transparent; }
+.training .btn:hover {
+  background-color: rgba(200, 200, 200, 0.5); }
+.training .well {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5); }
+.training .exercise-name-group {
+  float: right; }
+.training h4 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #fff; }
+.training .btn-group-sm > .btn, .training .btn-sm {
+  padding: 15px; }
+.training thead .uib-title {
+  border: 0px;
+  height: 92px;
+  background-color: rgba(255, 0, 0, 0.7); }
+.training thead .uib-right {
+  background-color: rgba(255, 0, 0, 0.7);
+  height: 92px;
+  border: 0px; }
+.training thead .uib-left {
+  background-color: rgba(255, 0, 0, 0.7);
+  border: 0px;
+  height: 92px; }
+.training thead .btn:hover {
+  background-color: black;
+  color: #fff;
+  opacity: 0.6; }
+.training .exercise-list {
+  padding-top: 25px; }
+.training .training-date {
+  margin-bottom: 100px; }
 
 @font-face {
   font-family: roboto-thin;
@@ -144,5 +211,10 @@ button:focus {
 @font-face {
   font-family: roboto-medium;
   src: url("../../media/fonts/roboto/roboto-Medium.ttf"); }
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("media/fonts/bootstrap/glyphicons-halflings-regular.ttf");
+  src: url("media/fonts/bootstrap/glyphicons-halflings-regular.woff2");
+  src: url("media/fonts/bootstrap/glyphicons-halflings-regular.woff"); }
 
 /*# sourceMappingURL=style.css.map */
