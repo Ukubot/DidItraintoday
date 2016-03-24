@@ -61,7 +61,7 @@ h5 {
   h5 .small {
     font-size: 300px; }
 
-.navbar {
+.header {
   position: fixed;
   z-index: 4;
   width: 100vw;
@@ -118,6 +118,22 @@ h5 {
 button:focus {
   outline: 0; }
 
+.btn-activity {
+  padding: 5px;
+  font-size: 3em;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  border: none;
+  margin: 2px 0px; }
+
+.btn-activity:hover {
+  transition-duration: 0.1s;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.btn-activity:active {
+  background-color: rgba(0, 0, 0, 0.6); }
+
 .form-control {
   height: 70px;
   line-height: 50px;
@@ -146,9 +162,15 @@ button:focus {
   outline: none; }
 
 .exercise-name {
-  height: 50px;
+  height: 60px;
   line-height: 30px;
   font-size: 30px; }
+
+.rep-name {
+  height: 50px;
+  line-height: 25px;
+  font-size: 25px;
+  width: 80%; }
 
 .loginfooter {
   text-align: center;
@@ -159,18 +181,25 @@ button:focus {
 .training .full button span {
   background-color: rgba(0, 0, 255, 0.7);
   border-radius: 1px;
+  width: 100%;
   color: black; }
 .training .partially button span {
   background-color: rgba(0, 255, 0, 0.7);
   border-radius: 1px;
   color: black; }
+.training .exercise1 {
+  background-color: rgba(0, 0, 255, 0.7);
+  height: 100%; }
+.training .exercise2 {
+  background-color: rgba(0, 255, 0, 0.7);
+  height: 100%; }
 .training .current {
   border: solid 1px red; }
 .training .uib-datepicker .ng-binding {
   outline: none;
   box-shadow: none;
   border: none;
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
   font-family: roboto-thin;
   font-weight: 300; }
@@ -183,6 +212,8 @@ button:focus {
   background-color: rgba(0, 0, 0, 0.7);
   transition-duration: 0.5s;
   opacity: 0.5; }
+.training .btn-info.active {
+  background-color: rgba(255, 0, 0, 0.6); }
 .training .well {
   padding: 0;
   outline: none;
@@ -203,7 +234,7 @@ button:focus {
 .training .btn-group-sm > .btn, .training .btn-sm {
   padding: 5px 30px; }
 .training .bottom-gap {
-  margin-bottom: 50px; }
+  margin-bottom: 70px; }
 .training thead .uib-title {
   border: 0px;
   height: 70px;

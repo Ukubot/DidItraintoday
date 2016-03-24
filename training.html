@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ui.bootstrap.demo">
+<html>
 <head>
   <meta charset="utf-8">
   <title>Did I train today</title>
@@ -9,60 +9,66 @@
 </head>
 <body>
   <div class="main-background">
-    <nav class="navbar">
+    <header class="header">
       <h1>DID <b>I</b> TRAIN <b>TODAY</b>?</h1>
-    </nav>
-    <div class="container">
+    </header>
+    <div ng-app="ui.bootstrap.demo" class="container">
       <div class="mainpanelwrap">
         <div class="mainpanel">
           <div class="training">
             <h3><b>What</b> Did<b> You</b> train </h3>
             <div ng-controller="DatepickerDemoCtrl">
-                <div class="col-md-7 col-md-offset-5">
-                  <h2><input type="text" class="form-control training-date"
-                    uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true"/></h2>
+              <div class="col-md-7 col-md-offset-5">
+                <h2><input type="text" class="form-control training-date"
+                  uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true"/></h2>
                 </div>
-              <div class="row bottom-gap">
-                <div class="col-md-7">
-                  <div style="display:inline-block; min-height:290px;">
-                    <uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="inlineOptions"></uib-datepicker>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <h2>Choose <b> Your</b> Activities:</h2>
-                  <div class="exercise-list">
-                    <div class="row">
-                      <div class="col-md-10 form-group exercise-name-group">
-                        <input type="text" value="Stretching" placeholder="Example exercise.." id="exercise1" class="form-control exercise-name">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-10 form-group exercise-name-group">
-                        <input type="text" placeholder="Chest day" id="exercise2" class="form-control exercise-name">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-10 form-group exercise-name-group">
-                        <input type="text" placeholder="Running" id="exercise3" class="form-control exercise-name">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-md-10 form-group exercise-name-group">
-                        <input type="text" placeholder="Add new.. " id="exercise4" class="form-control exercise-name">
-                      </div>
+                <div class="row bottom-gap">
+                  <div class="col-md-8">
+                    <div style="display:inline-block; min-height:290px;">
+                      <uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="inlineOptions"></uib-datepicker>
                     </div>
                   </div>
+                  <div class="col-md-4">
+                    <h2>Choose <b> Your</b> Activities:</h2>
+                    <div class="exercise-list">
+                      <div class="row">
+                        <div class="col-md-10 form-group exercise-name-group">
+                          <input type="text" value="Stretching" placeholder="Example exercise.." id="exercise1" class="form-control exercise-name">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-10 form-group exercise-name-group">
+                          <input type="text" placeholder="Chest day" id="exercise2" class="form-control exercise-name">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-10 form-group exercise-name-group">
+                          <input type="text" placeholder="Running" id="exercise3" class="form-control exercise-name">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-10 form-group exercise-name-group">
+                          <input type="text" placeholder="Add new.. " id="exercise4" class="form-control exercise-name">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-7">
-                  <h4><b>Exercises </b></h4>
-                </div>
-                <div class="col-md-8 form-group exercise-name-group">
-                  <input type="text" placeholder="Add an exercise for this day" id="set1" class="form-control exercise-name">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h4><b>Exercises </b></h4>
+                  </div>
+                  <div class="col-md-8 form-group exercise-name-group">
+                    <input type="text" placeholder="Add an exercise for this day" id="set1" class="form-control exercise-name">
+                    <input type="text" placeholder="Notes and reps here" id="set2" class="form-control rep-name">
+                  </div>
+                  <div class="col-md-4">
+                    <button class="btn-activity">I Did More!</button>
+                    <button class="btn-activity">I Did Less..</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -85,10 +91,12 @@
       </div><!--mainpanel-wrapper end-->
     </div><!--container-end-->
   </body>
+  <script src="bower_components/jquery//dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
   <script src="compiled/js/main.min.js"></script>
   <script src="compiled/js/datepicker.js"></script>
+  <script src="compiled/js/headerhide.js"></script>
 
   </html>

@@ -32,7 +32,25 @@
   }
 }
 
-
 button:focus {
   outline: 0;
+}
+
+.btn-activity {
+  padding: 5px;
+  font-size: 3em;
+  background-color: $transparent-black;
+  color: #fff;
+  width: 100%;
+  border: none;
+  margin: 2px 0px;
+}
+
+.btn-activity:hover {
+  transition-duration: 0.1s;
+  background-color: $transparent-black-dark;
+}
+
+.btn-activity:active {
+  background-color: $transparent-black-light;
 }
