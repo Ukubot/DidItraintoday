@@ -3,6 +3,16 @@ body {
   background-image: url('../../media/images/background1.jpg');
 }
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.row {
+margin-right: 0px;
+margin-left: 0px;
+}
+
 .main-background {
   color: black;
   height: 100vh;

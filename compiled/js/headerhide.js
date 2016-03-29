@@ -1,9 +1,10 @@
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
+var app = angular.module('myApp', []);
 
-    if (scroll >= 50) {
-        $(".header").fadeOut();
-    } else {
-        $(".header").fadeIn();
-    }
+app.directive("scroll", function () {
+  return function(scope, element, attrs) {
+    angular.element(element).bind("scroll", function() {
+      scope[attrs.scroll] = true;
+      scope.$apply();
+    });
+  };
 });

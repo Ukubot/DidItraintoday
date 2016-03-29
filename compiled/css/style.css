@@ -2,6 +2,14 @@ body {
   position: fixed;
   background-image: url("../../media/images/background1.jpg"); }
 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
 .main-background {
   color: black;
   height: 100vh;
@@ -196,7 +204,7 @@ button:focus {
   outline: none;
   box-shadow: none;
   border: none;
-  font-size: 28px;
+  font-size: 25px;
   color: #fff;
   font-family: roboto-thin;
   font-weight: 300; }
@@ -253,6 +261,9 @@ button:focus {
   padding-top: 25px; }
 .training .training-date {
   margin-bottom: 100px; }
+
+.inspiration {
+  padding-top: 60px; }
 
 @font-face {
   font-family: roboto-thin;
