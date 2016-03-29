@@ -78,9 +78,6 @@ h5 {
 
 .mainpanelwrap {
   box-shadow: 8px 8px 1px rgba(255, 0, 0, 0.7); }
-  .mainpanelwrap .row {
-    margin-right: 0px;
-    margin-left: 0px; }
 
 .container {
   padding-bottom: 50px; }
