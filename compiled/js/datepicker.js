@@ -1,5 +1,8 @@
-angular.module('ui.bootstrap.demo', ['ngAnimate', 'ui.bootstrap']);
-angular.module('ui.bootstrap.demo').controller('DatepickerDemoCtrl', function ($scope) {
+
+angular.module('myApp', ['ngAnimate', 'ui.bootstrap']);
+angular.module('myApp').controller('DatepickerDemoCtrl', function ($scope) {
+  $scope.toggles = [{ state: true }, { state: false }, { state: true }];
+
   $scope.today = function() {
     $scope.dt = new Date();
   };
@@ -93,4 +96,10 @@ angular.module('ui.bootstrap.demo').controller('DatepickerDemoCtrl', function ($
 
     return '';
   }
+});
+
+angular.module('myApp').controller('ExerciseCtrl', function () {
+  this.data = [
+    { text: '' },
+  ];
 });

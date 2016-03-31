@@ -7,3 +7,10 @@
   vertical-align: middle;
   background-color: $transparent-red;
 }
+
+@media screen and (max-width: 660px) {
+    .header {
+        display: none;
+        transition-duration: 0.3s;
+    }
+}

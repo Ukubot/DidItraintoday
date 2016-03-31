@@ -12,39 +12,23 @@
     color: black;
   }
 
-
-// TRAINING COLORS
-
-.exercise1 {
-  background-color: $exercise1-color;
-  height: 100%;
-}
-.exercise2 {
-  background-color: $exercise2-color;
-  height: 100%;
-}
-
-  .current {
-    border:solid 1px red;
-  }
-
   .uib-datepicker {
     .ng-binding {
       outline: none;
       box-shadow: none;
       border:none;
-      font-size: 25px;
-        color: #fff;
-        font-family: roboto-thin;
-        font-weight: 300;
+      font-size: 23px;
+      color: #fff;
+      font-family: roboto-thin;
+      font-weight: 300;
     }
   }
 
 
 
-.btn-group-sm>.btn, .training .btn-sm {
-  padding: 5px 30px;
-}
+  .btn-group-sm>.btn, .training .btn-sm {
+    padding: 5px 30px;
+  }
 
   .btn-default {
     border: solid $transparent-black 1px;
@@ -71,6 +55,7 @@
 
   .exercise-name-group {
     float:right;
+    z-index: 5;
   }
 
 
@@ -85,16 +70,20 @@
   }
 
   h2 {
-line-height: 70px;
+    line-height: 70px;
   }
 
   .btn-group-sm>.btn, .btn-sm {
     padding:5px 30px;
   }
 
-.bottom-gap {
-margin-bottom: 70px;
-}
+  .bottom-gap {
+    margin-bottom: 70px;
+  }
+
+  .top-gap {
+    margin-top: 70px;
+  }
 
   thead {
     .uib-title {
@@ -126,6 +115,41 @@ margin-bottom: 70px;
   }
 
   .training-date {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
   }
+
+  // TRAINING COLORS
+  .exercise1 {
+    background-color: $exercise1-color;
+    height: 100%;
+  }
+  .exercise2 {
+    background-color: $exercise2-color;
+    height: 100%;
+  }
+  .exercise3 {
+    background-color: $exercise3-color;
+    height: 100%;
+  }
+  .exercise4 {
+    background-color: $exercise4-color;
+    height: 100%;
+  }
+  .current {
+    border:solid 1px red;
+  }
+
+  #exercise1:hover, & #exercise1:focus {
+    border-color: $exercise1-color;
+  }
+  #exercise2:hover, & #exercise2:focus {
+    border-color: $exercise2-color;
+  }
+  #exercise3:hover, & #exercise3:focus {
+    border-color: $exercise3-color;
+  }
+  #exercise4:hover, & #exercise4:focus {
+    border-color: $exercise4-color;
+  }
+
 }

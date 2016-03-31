@@ -4,6 +4,12 @@
   color: black;
 }
 
+.btn.active, .btn:active {
+  box-shadow: none;
+  outline: none;
+  opacity: 0.8;
+}
+
 .footerbtn {
   padding: 10px;
 }
@@ -33,7 +39,7 @@
 }
 
 button:focus {
-  outline: 0;
+  outline: none !important;
 }
 
 .btn-activity {
@@ -44,6 +50,12 @@ button:focus {
   width: 100%;
   border: none;
   margin: 2px 0px;
+}
+.less {
+  margin-top: 5px;
+  background-color: $transparent-black-light;
+  font-size: 1.5em;
+  width: 80%;
 }
 
 .btn-activity:hover {
